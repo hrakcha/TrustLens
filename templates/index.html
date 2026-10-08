@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -861,4 +862,853 @@ Unknown Sender: Click this link and enter your password and OTP. You only have 1
     <script src="/static/app.js"></script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TrustLens — AI Scam Intelligence</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+
+    <!-- HEADER -->
+
+    <header class="topbar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                🛡️
+            </div>
+
+            <div>
+                <h1>TrustLens</h1>
+                <p>AI Scam Intelligence</p>
+            </div>
+
+        </div>
+
+
+        <div class="status">
+
+            <span class="status-dot"></span>
+
+            AI ENGINE ONLINE
+
+        </div>
+
+    </header>
+
+
+
+    <main class="container">
+
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div>
+
+                <div class="eyebrow">
+                    CONVERSATION SECURITY
+                </div>
+
+                <h2>
+                    See the manipulation<br>
+                    <span>before you trust the message.</span>
+                </h2>
+
+                <p>
+                    TrustLens analyzes conversations for impersonation,
+                    psychological manipulation, fraud signals and suspicious
+                    requests.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- WHY TRUSTLENS -->
+
+        <section class="trustlens-value">
+
+            <div class="value-heading">
+
+                <div class="eyebrow">
+                    WHY TRUSTLENS?
+                </div>
+
+                <h2>
+                    More than a scam detector.
+                </h2>
+
+                <p>
+                    TrustLens doesn't just ask whether a message is suspicious.
+                    It explains how the manipulation works and what you should
+                    do next.
+                </p>
+
+            </div>
+
+
+            <div class="value-grid">
+
+                <div class="value-card">
+
+                    <div class="value-icon">
+                        🎭
+                    </div>
+
+                    <h3>
+                        Detect Manipulation
+                    </h3>
+
+                    <p>
+                        Identifies urgency, fear, authority pressure,
+                        isolation and other psychological tactics.
+                    </p>
+
+                </div>
+
+
+                <div class="value-card">
+
+                    <div class="value-icon">
+                        📈
+                    </div>
+
+                    <h3>
+                        Explain the Escalation
+                    </h3>
+
+                    <p>
+                        Reconstructs how a conversation moves from
+                        initial contact toward a harmful action.
+                    </p>
+
+                </div>
+
+
+                <div class="value-card">
+
+                    <div class="value-icon">
+                        🛑
+                    </div>
+
+                    <h3>
+                        Stop the Next Step
+                    </h3>
+
+                    <p>
+                        Provides a Second Thought and safe verification
+                        steps before the user acts.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- INPUT CARD -->
+
+        <section class="card input-card">
+
+
+            <!-- DEMO SCENARIOS -->
+
+            <div class="demo-scenarios">
+
+                <div class="demo-title">
+
+                    <span>⚡</span>
+
+                    Quick Demo Scenarios
+
+                </div>
+
+
+                <div class="demo-buttons">
+
+
+                    <button
+                        class="demo-btn"
+                        onclick="loadDemo('bank')"
+                    >
+
+                        🏦
+
+                        <span>
+
+                            <strong>
+                                Bank Scam
+                            </strong>
+
+                            <small>
+                                Impersonation
+                            </small>
+
+                        </span>
+
+                    </button>
+
+
+
+                    <button
+                        class="demo-btn"
+                        onclick="loadDemo('job')"
+                    >
+
+                        💼
+
+                        <span>
+
+                            <strong>
+                                Fake Job
+                            </strong>
+
+                            <small>
+                                Employment scam
+                            </small>
+
+                        </span>
+
+                    </button>
+
+
+
+                    <button
+                        class="demo-btn"
+                        onclick="loadDemo('delivery')"
+                    >
+
+                        📦
+
+                        <span>
+
+                            <strong>
+                                Delivery Scam
+                            </strong>
+
+                            <small>
+                                Payment fraud
+                            </small>
+
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- INPUT HEADING -->
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h3>
+                        Analyze a conversation
+                    </h3>
+
+                    <p>
+                        Paste a WhatsApp, SMS, email or chat conversation below.
+                    </p>
+
+                </div>
+
+
+                <span class="input-label">
+                    UNTRUSTED CONTENT
+                </span>
+
+            </div>
+
+
+
+            <!-- TEXTAREA -->
+
+            <textarea
+                id="conversationInput"
+                placeholder="Paste the conversation here...
+
+Example:
+Unknown Sender: Hello, I'm calling from your bank's security department.
+
+You: What happened?
+
+Unknown Sender: Your account will be blocked today unless you verify it immediately.
+
+You: How do I verify it?
+
+Unknown Sender: Click this link and enter your password and OTP. You only have 10 minutes."
+            ></textarea>
+
+
+
+            <!-- INPUT FOOTER -->
+
+            <div class="input-footer">
+
+                <span id="charCount">
+                    0 characters
+                </span>
+
+
+                <button
+                    id="analyzeBtn"
+                    class="analyze-btn"
+                >
+
+                    🔍 Analyze Conversation
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- LOADING -->
+
+        <section
+            id="loading"
+            class="loading-card hidden"
+        >
+
+            <div class="loader"></div>
+
+
+            <div>
+
+                <h3>
+                    TrustLens is investigating...
+                </h3>
+
+                <p>
+                    Checking identity claims, manipulation tactics,
+                    escalation patterns and suspicious requests.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RESULTS -->
+
+        <section
+            id="results"
+            class="hidden"
+        >
+
+
+            <!-- TOP RESULT CARDS -->
+
+            <div class="result-grid">
+
+
+                <!-- RISK -->
+
+                <div class="risk-card main-risk">
+
+                    <div
+                        class="risk-gauge"
+                        id="riskGauge"
+                    >
+
+                        <div class="risk-gauge-content">
+
+                            <div class="risk-gauge-score">
+
+                                <span id="riskScore">
+                                    --
+                                </span>
+
+                                <small>
+                                    /100
+                                </small>
+
+                            </div>
+
+
+                            <div class="risk-gauge-label">
+                                RISK
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="risk-details">
+
+                        <div class="result-label">
+                            OVERALL RISK
+                        </div>
+
+
+                        <div
+                            id="riskLevel"
+                            class="risk-level"
+                        >
+                            WAITING FOR ANALYSIS
+                        </div>
+
+
+                        <p>
+                            TrustLens combines AI analysis and security
+                            signals to assess the conversation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CLAIMED IDENTITY -->
+
+                <div class="info-card">
+
+                    <div class="result-label">
+                        CLAIMED IDENTITY
+                    </div>
+
+
+                    <h3 id="claimedIdentity">
+                        --
+                    </h3>
+
+
+                    <p>
+                        What the sender claims to be.
+                    </p>
+
+                </div>
+
+
+
+                <!-- REQUESTED ACTION -->
+
+                <div class="info-card">
+
+                    <div class="result-label">
+                        REQUESTED ACTION
+                    </div>
+
+
+                    <h3 id="requestedAction">
+                        --
+                    </h3>
+
+
+                    <p>
+                        What the recipient is being asked to do.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- AI ASSESSMENT -->
+
+            <div class="card summary-card">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <div class="eyebrow">
+                            AI ASSESSMENT
+                        </div>
+
+                        <h3>
+                            Why this conversation matters
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <p id="summary">
+                    --
+                </p>
+
+            </div>
+
+
+<!-- AI EVIDENCE -->
+<div class="card evidence-card">
+
+    <div class="card-title">
+        <span>🧠</span>
+        Why TrustLens Flagged This
+    </div>
+
+    <p class="card-description">
+        Specific evidence from the conversation that contributed to the risk assessment.
+    </p>
+
+    <div id="evidenceList" class="evidence-list">
+
+        <span class="empty-state">
+            No evidence yet
+        </span>
+
+    </div>
+
+</div>
+<!-- ATTACK PATH -->
+
+<div class="card attack-path-card">
+
+    <div class="card-title">
+        <span>🎯</span>
+        Likely Scam Attack Path
+    </div>
+
+    <p class="card-description">
+        Predicts the likely next steps in the scam based on the conversation.
+    </p>
+
+    <div id="attackPath" class="attack-path">
+
+        <span class="empty-state">
+            No attack path identified yet
+        </span>
+
+    </div>
+
+</div>
+            <!-- MANIPULATION + RED FLAGS -->
+
+            <div class="two-column">
+
+
+                <div class="card">
+
+                    <div class="card-title">
+
+                        <span>
+                            🎭
+                        </span>
+
+                        Manipulation Signals
+
+                    </div>
+
+
+                    <p class="card-description">
+                        Psychological techniques detected in the conversation.
+                    </p>
+
+
+                    <div
+                        id="manipulationList"
+                        class="tag-container"
+                    >
+
+                        <span class="empty-state">
+                            No analysis yet
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="card">
+
+                    <div class="card-title">
+
+                        <span>
+                            ⚠️
+                        </span>
+
+                        Red Flags
+
+                    </div>
+
+
+                    <p class="card-description">
+                        Specific signals that may indicate fraud or impersonation.
+                    </p>
+
+
+                    <div
+                        id="redFlags"
+                        class="flag-list"
+                    >
+
+                        <span class="empty-state">
+                            No analysis yet
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ====================================
+                 SCAM ESCALATION SCORE
+                 ==================================== -->
+
+            <div class="card escalation-score-card">
+
+                <div class="escalation-score-header">
+
+                    <div>
+
+                        <div class="eyebrow">
+                            THREAT PROGRESSION
+                        </div>
+
+                        <h3>
+                            Scam Escalation Score
+                        </h3>
+
+                        <p>
+                            Measures how far the conversation has progressed
+                            toward a potentially harmful action.
+                        </p>
+
+                    </div>
+
+
+                    <div class="escalation-score-number">
+
+                        <span id="escalationScore">
+                            --
+                        </span>
+
+                        <small>
+                            /100
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="escalation-progress">
+
+                    <div
+                        id="escalationProgressBar"
+                        class="escalation-progress-bar"
+                    ></div>
+
+                </div>
+
+
+                <div class="escalation-labels">
+
+                    <span>
+                        Initial contact
+                    </span>
+
+                    <span>
+                        Pressure
+                    </span>
+
+                    <span>
+                        Harmful action
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ESCALATION TIMELINE -->
+
+            <div class="card">
+
+                <div class="card-title">
+
+                    <span>
+                        📈
+                    </span>
+
+                    Conversation Escalation
+
+                </div>
+
+
+                <p class="card-description">
+                    TrustLens reconstructs how the conversation moves
+                    from initial contact toward a potentially harmful action.
+                </p>
+
+
+                <div
+                    id="timeline"
+                    class="timeline"
+                >
+
+                    <div class="empty-state">
+                        No escalation data yet.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SECOND THOUGHT -->
+
+            <div class="second-thought">
+
+
+                <div class="warning-icon">
+                    🛑
+                </div>
+
+
+                <div class="second-content">
+
+
+                    <div class="eyebrow">
+                        SECOND THOUGHT
+                    </div>
+
+
+                    <h2>
+                        Pause before you act.
+                    </h2>
+<div class="intervention-alert">
+
+    <span class="intervention-icon">⚠️</span>
+
+    <div>
+        <div class="intervention-title">
+            STOP — DON'T ACT YET
+        </div>
+
+        <div class="intervention-text">
+            This conversation may be trying to pressure you into making a risky decision.
+            Take a moment before clicking, replying, paying, or sharing information.
+        </div>
+    </div>
+
+</div>
+<div class="safety-actions">
+
+    <div class="safety-action">
+        <div class="safety-action-icon">🛑</div>
+        <div>
+            <div class="safety-action-title">Don't Click</div>
+            <div class="safety-action-text">
+                Avoid suspicious links or attachments.
+            </div>
+        </div>
+    </div>
+
+    <div class="safety-action">
+        <div class="safety-action-icon">🔐</div>
+        <div>
+            <div class="safety-action-title">Don't Share</div>
+            <div class="safety-action-text">
+                Never share OTPs, passwords, or sensitive information.
+            </div>
+        </div>
+    </div>
+
+    <div class="safety-action">
+        <div class="safety-action-icon">📞</div>
+        <div>
+            <div class="safety-action-title">Verify Independently</div>
+            <div class="safety-action-text">
+                Contact the organization using an official channel.
+            </div>
+        </div>
+    </div>
+
+</div>
+
+                    <p id="recommendation">
+                        --
+                    </p>
+
+
+
+                    <div class="verification-box">
+
+                        <h4>
+                            ✓ Verify safely
+                        </h4>
+
+
+                        <ul id="verificationSteps">
+
+                            <li>
+                                No verification steps available yet.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <span>
+                TrustLens
+            </span>
+
+
+            <span>
+                AI-powered scam & impersonation intelligence
+            </span>
+
+        </footer>
+
+
+    </main>
+
+
+
+    <script src="/static/app.js"></script>
+
+</body>
+>>>>>>> f25767ae2e72bab6e08403bdad4bc2512f85c508
 </html>
